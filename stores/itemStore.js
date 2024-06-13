@@ -19,7 +19,7 @@ const itemStore = create((set) => ({
       if (snapshot.exists()) {
         const rawData = snapshot.val();
         const allItems = Object.entries(rawData)
-          .filter(([id, data]) => data.userID === userID) // Filter items by userID
+          .filter(([id, data]) => data.userID === userID)
           .map(([id, data]) => ({
             id,
             ...data,

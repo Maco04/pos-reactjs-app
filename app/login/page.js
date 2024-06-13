@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-// import { signIn } from 'next-auth/react';
 import { Card, Form, Input, Button, message, Row, Col, Alert } from 'antd';
 import { loginWithEmail } from '@/config/auth';
 
@@ -40,9 +39,9 @@ const Login = () => {
                 description={
                   <div>
                     You can use this access! <br />
-                    Email: user1@maco.com
+                    Email: user2@maco.com
                     <br />
-                    Password: 87654321
+                    Password: maco87654321
                   </div>
                 }
                 type="info"

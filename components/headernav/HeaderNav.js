@@ -10,8 +10,6 @@ import { useAuthStore } from '@/stores/useAuthStore';
 import { auth } from '@/firebase';
 
 const HeaderNav = (props) => {
-  const user = useAuthStore((state) => state.user);
-
   const router = useRouter();
 
   const [isMobile, setIsMobile] = useState(false);
@@ -19,10 +17,10 @@ const HeaderNav = (props) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Assuming 768px is the breakpoint for mobile
+      setIsMobile(window.innerWidth < 768);
     };
 
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {

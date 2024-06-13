@@ -8,15 +8,8 @@ import ItemTable from '../itemtable/ItemTable';
 import { useAuthStore } from '@/stores/useAuthStore';
 
 const CategoryTable = ({}) => {
-  const {
-    items,
-    getItems,
-    deleteItem,
-    itemLoading,
-    editCategory,
-    deleteCategory,
-    getAllItems,
-  } = itemStore();
+  const { items, itemLoading, editCategory, deleteCategory, getAllItems } =
+    itemStore();
   const user = useAuthStore((state) => state.user);
   const userID = user?.uid;
   const [editForm] = Form.useForm();

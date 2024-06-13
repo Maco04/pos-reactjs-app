@@ -15,12 +15,9 @@ const ProtectedRoute = (WrappedComponent) => {
       }
     }, [user, router]);
 
-    if (!user) {
-      return <Loading />; // or a loading spinner
+    if (!user === null) {
+      return <Loading />;
     }
-    // if (user) {
-    //   return router.push('/dashboard'); // or a loading spinner
-    // }
 
     return user ? <WrappedComponent {...props} /> : null;
   };

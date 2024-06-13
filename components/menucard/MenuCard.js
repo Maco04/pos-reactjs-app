@@ -1,6 +1,6 @@
 'use client';
 
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import { Card, Row, Col } from 'antd';
 
 import AddCategory from '../addcategory/AddCategory';
@@ -11,7 +11,7 @@ const MenuCard = (props) => {
     <Fragment>
       <Card
         bordered={false}
-        title={<p className="text-xl">Menu</p>}
+        title={<p className="text-xl">Manage Menu Items</p>}
         extra={
           <div>
             <AddCategory />

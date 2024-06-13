@@ -117,6 +117,7 @@ const AddItem = ({ itemId, isModalVisible, setIsModalVisible, editData }) => {
       cost: '',
       stock: '',
     });
+    setOptionList([]);
 
     form.resetFields();
 
@@ -140,7 +141,6 @@ const AddItem = ({ itemId, isModalVisible, setIsModalVisible, editData }) => {
 
     form.resetFields();
 
-    // Close the modal
     setIsModalVisible(false);
   };
 
