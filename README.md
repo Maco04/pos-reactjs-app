@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# POS App
 
-## Getting Started
+POS App is a web application for managing menu items in a point-of-sale (POS) system. It allows users to categorize menu items, add details such as name, cost, price, stock, and include options with their respective cost, price, and stock.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Features](#features)
+- [Technologies](#technologies)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Categorize menu items
+- Add and manage menu item details (name, cost, price, stock)
+- Add and manage options for each menu item (cost, price, stock)
+- User-friendly interface
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies
 
-## Learn More
+The application is built using the following technologies:
 
-To learn more about Next.js, take a look at the following resources:
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Ant Design (Antd)](https://ant.design/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Zustand](https://github.com/pmndrs/zustand)
+- [Firebase](https://firebase.google.com/)
+- [Node.js](https://nodejs.org/) (version 20.14.0)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Ensure you have the following installed:
 
-## Deploy on Vercel
+- [Node.js](https://nodejs.org/) (version 20.14.0)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
