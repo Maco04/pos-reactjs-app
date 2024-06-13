@@ -1,33 +1,26 @@
-// import { useAuthState } from 'react-firebase-hooks/auth';
-// import { auth } from '../firebase';
 'use client';
-
-import MenuList from '@/components/menulist/MenuList';
+import React, { Fragment } from 'react';
+import HeaderNav from '@/components/headernav/HeaderNav';
+import { Layout, Row, Col } from 'antd';
+import MenuCard from '@/components/menucard/MenuCard';
 import ProtectedRoute from '@/components/protectedroute/ProtectedRoute';
-import { Layout } from 'antd';
 
 const Home = () => {
   const { Content } = Layout;
-  // const [user, loading, error] = useAuthState(auth);
-
-  // useEffect(() => {
-  //   if (!user && !loading && !error) {
-  //     // Redirect to login page or show a message
-  //   }
-  // }, [user, loading, error]);
-
   return (
-    <div>
-      {/* {user ? <MenuList /> : <p>Please log in to manage the menu</p>} */}
-
-      {/* <Layout>
-        <Content style={{ padding: '60px 30px' }}>
-          <MenuList />
+    <Fragment>
+      <HeaderNav />
+      <Layout>
+        <Content style={{ padding: '60px 0', minHeight: '100vh' }}>
+          <Row align={'center'}>
+            <Col xs={24} md={20}>
+              <MenuCard />
+            </Col>
+          </Row>
         </Content>
-      </Layout> */}
-      <ProtectedRoute />
-    </div>
+      </Layout>
+    </Fragment>
   );
 };
 
-export default Home;
+export default ProtectedRoute(Home);

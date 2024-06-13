@@ -12,10 +12,6 @@ import { auth } from '@/firebase';
 const HeaderNav = (props) => {
   const user = useAuthStore((state) => state.user);
 
-  const logout = async () => {
-    await auth.signOut();
-    useAuthStore.getState().setUser(null);
-  };
   const router = useRouter();
 
   const [isMobile, setIsMobile] = useState(false);
@@ -54,7 +50,7 @@ const HeaderNav = (props) => {
       defaultSelectedKeys={['1']}
     >
       <Menu.Item key="1">
-        <Link href="#">{'user'}</Link>
+        <Link href="#">{'Hi, Visitor'}</Link>
       </Menu.Item>
       <Menu.Item key="2">
         <button className="text-red-500" onClick={handleSignOut}>
@@ -67,7 +63,7 @@ const HeaderNav = (props) => {
     <Header>
       {!isMobile ? (
         <div className={`flex justify-between items-center h-full `}>
-          <div className="text-xl font-bold text-primary ">UTAK POS App</div>
+          <div className="text-xl font-bold text-primary ">POS App</div>
           <Dropdown overlay={menu} trigger={['click']}>
             <Avatar
               style={{ cursor: 'pointer' }}
@@ -87,9 +83,7 @@ const HeaderNav = (props) => {
           </div>
           <Drawer
             title={
-              <div className="text-xl font-bold text-primary ">
-                UTAK POS App
-              </div>
+              <div className="text-xl font-bold text-primary ">POS App</div>
             }
             placement="left"
             closable={true}

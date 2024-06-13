@@ -32,9 +32,7 @@ const Login = () => {
         <Col xs={20} sm={16} md={12} lg={8}>
           <Card bordered={false} style={{ padding: '16px' }}>
             <div className="text-center mb-5">
-              <div className="text-primary font-bold text-xl mb-2">
-                UTAK POS App
-              </div>
+              <div className="text-primary font-bold text-xl mb-2">POS App</div>
               <Alert
                 style={{ marginBottom: '8px' }}
                 message="Hello Visitor!"
@@ -42,7 +40,7 @@ const Login = () => {
                 description={
                   <div>
                     You can use this access! <br />
-                    Email: admin2@maco.com
+                    Email: user1@maco.com
                     <br />
                     Password: 87654321
                   </div>
